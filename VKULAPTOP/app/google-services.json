@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583915969417",
+    "project_id": "vkulaptop",
+    "storage_bucket": "vkulaptop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583915969417:android:4ada5c5f64704ee5241f58",
+        "android_client_info": {
+          "package_name": "com.example.honghanh.vkulaptop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583915969417-b3ep2sip3m811ds87mnsqah11heng04a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1_zl30CVmxUYkMMS5QXZzdsax0lIxvqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583915969417-b3ep2sip3m811ds87mnsqah11heng04a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

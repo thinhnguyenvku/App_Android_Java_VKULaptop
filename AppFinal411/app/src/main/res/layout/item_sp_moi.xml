@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/itemsp_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_media_24" />
+            <TextView
+                android:id="@+id/itemsp_ten"
+                android:text="Laptop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/itemsp_gia"
+                android:text="giá: 250000đ"
+                android:textSize="10dp"
+                android:textColor="#FF0000"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/icon_new"
+            android:tint="@color/red"
+            android:layout_gravity="top|right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

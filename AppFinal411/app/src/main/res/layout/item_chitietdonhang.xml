@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_imgchitiet"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_media_24"
+                android:layout_width="110dp"
+                android:layout_height="110dp"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/item_imgchitiet"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_tenspchitiet"
+                    android:text="Laptop"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/item_soluongchitiet"
+                    android:layout_marginTop="7dp"
+                    android:text="Số lượng: 2"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/item_giachitiet"
+                    android:layout_marginTop="7dp"
+                    android:text="Giá: 25000000 Đ"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

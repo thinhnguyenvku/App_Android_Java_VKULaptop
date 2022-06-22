@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.honghanh.vkulaptop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="Admin VKU LAPTOP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppFinal411"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".activity.LienHeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ThemSPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QuanLiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.XemDonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ThanhToanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DangNhapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DangKyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.GioHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChiTietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DienThoaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".Service.FirebaseMessagerReciver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

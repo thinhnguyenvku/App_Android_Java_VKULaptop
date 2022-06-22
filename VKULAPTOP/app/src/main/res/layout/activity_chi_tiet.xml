@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChiTietActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="@string/chitiet"
+        android:background="#FF0000"
+        app:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <FrameLayout
+            android:id="@+id/framegiohang"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_width="60dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/icon_cart"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/menu_sl"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="top|right"
+                android:textSize="15sp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgchitiet"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_media_24"
+            android:layout_width="160dp"
+            android:layout_height="160dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txttensp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Tên sản phẩm"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtgiasp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"
+                android:text="Giá: 25000 đ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:gravity="center"
+                android:background="@drawable/spinner"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnthemvaogiohang"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#FF0000"
+                android:textSize="12sp"
+                android:text="Thêm giỏ hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtmotachitiet"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
