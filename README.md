@@ -4,6 +4,6 @@
 Android Studio + XAMPP + Sublime Text 3
 
 1. Folder AppFinal411: app người quản trị, import vào AndroidStudio
-2. Folder VKULaptop: app người dùng, import vào AndroidStudio
+2. Folder VKULAPTOP: app người dùng, import vào AndroidStudio
 3. Folder appfinal: chứa các file php, đặt folder này vào htdocs của XAMPP
 4. File appfinal411.sql: import vào phpmyadmin
